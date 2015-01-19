@@ -19,13 +19,13 @@ typedef struct _tmp_element_t {
 } tmp_element_t;
 /*
  * Random Index Generation
- * For generating random indexing, we create a this function to produce index randomly.
- * It first generates random numbers according to the input of array, 
- * idx[] size and store those numbers in an size-equal array of the tmp_element_t. 
- * The tmp_element_t contains two member: rand_num and idx, when generating random number, 
- * the rand_num holds the random number and idx is initialized sequecely from zero.
- * After got all random numbers, we sort the array of the tmp_element_t descendingly. 
- * Those sorted numbers comply with pre-defined index, we assign those index into idx[], and finally the random ordered index was got.
+ For generating random indexing, we create this function to produce indexes randomly. 
+ It first generates random numbers according to the size of an array idx[], and store those numbers 
+ in a size equal array of the data structure of the tmp_element_t.  The tmp_element_t contains two members: 
+ rand_num and "idx", when generating random numbers, the rand_num holds the random number and "idx" is initialized 
+ sequentially from zero. After got all random numbers, we sort the array of the tmp_element_t descending. 
+ Those sorted numbers comply with pre-defined index, we assign those indexes into idx[], and 
+ finally the randomly ordered indexes were got.
  */
 
 void randomOrderIndexTest(int idx[], int size) {
